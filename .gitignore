@@ -1,0 +1,12 @@
+*.o
+*.hex
+*.bin
+*.map
+*.d
+*.elf
+*-
+*~
+test
+docs
+*.lock
+share/xconn/lib/xconn/web/static/graphics/*.png
