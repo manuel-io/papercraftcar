@@ -21,6 +21,7 @@ int
 main(void)
 {
   DDRB |= (1 << 5);
+  PORTB |= (1 << 5);
 
   sei();
 
@@ -34,7 +35,7 @@ main(void)
   sr04_init(SR04_TIMER1);
   engine_init();
 
-  PORTB |= (1 << 5);
+  PORTB &= ~(1 << 5);
 
   while (1) {
 
